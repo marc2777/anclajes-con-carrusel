@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empresa Ejemplo</title>
+    <style>
+      * {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      /* Estilos del encabezado */
+      header {
+        background-color: rgb(16, 16, 74);
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+      nav {
+        margin-bottom: 0;
+      }
+      nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Sección del carrusel */
+      .carousel {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        background-image: url("imagenes/images\ \(3\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .slides {
+        display: flex;
+        width: 300%;
+        height: 100%;
+        animation: slide 15s infinite;
+      }
+
+      .slides img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        33% {
+          transform: translateX(-100%);
+        }
+        66% {
+          transform: translateX(-200%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      /* Estilos de las secciones */
+      section {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .nosotros-seccion {
+        background-color: rgb(43, 43, 84);
+        padding: 20px;
+      }
+
+      .services,
+      .contact {
+        background-color: #eee;
+        padding: 20px;
+      }
+
+      footer {
+        background-color: rgb(8, 8, 81);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        bottom: 0;
+      }
+
+      /* Estilos de los anclajes */
+      nav {
+        text-align: center;
+        margin: 0 auto;
+        background-color: #333;
+      }
+
+      /*titulo principal*/
+      .heading-principal {
+        font-family: monospace;
+        color: white;
+        font-size: 3rem;
+      }
+      /*Enlaces de volver menu*/
+
+      .enlace-nosotros {
+        color: black;
+        border: thin solid black;
+        background-color: white;
+        padding: 0.5rem;
+        border-radius: 1rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        transition: transform 0.3s ease;
+      }
+      a:hover {
+        transform: scale(1.2);
+
+        /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);*/
+        box-shadow: 0 10px 10px rgba(1, 0, 0, 1);
+      }
+
+      .enlace-servicio {
+        color: black;
+        border: thin solid black;
+        background-color: white;
+        padding: 0.5rem;
+        border-radius: 1rem;
+      }
+      .enlace-productos {
+        color: black;
+        border: thin solid black;
+        background-color: white;
+        padding: 0.5rem;
+        border-radius: 1rem;
+      }
+      .enlace-contacto {
+        color: black;
+        border: thin solid black;
+        background-color: white;
+        padding: 0.5rem;
+        border-radius: 1rem;
+      }
+      .enlace-asociados {
+        color: black;
+        border: thin solid black;
+        background-color: white;
+        padding: 0.5rem;
+        border-radius: 1rem;
+      }
+      /*titulos */
+      .nosotros-heading {
+        color: white;
+      }
+      .noso {
+        color: white;
+      }
+      .productos-heading {
+        color: white;
+      }
+      .contacto-heading {
+        color: white;
+      }
+      /*Secciones*/
+      .nosotros-seccion {
+        color: white;
+      }
+      .services {
+        background-color: antiquewhite;
+      }
+      .seccion-productos {
+        background-color: rgb(66, 66, 188);
+        color: white;
+      }
+      .seccion-asociados {
+        background-color: rgb(178, 174, 165);
+      }
+      .contact {
+        background-color: rgb(57, 57, 97);
+        color: white;
+      }
+      /*footer*/
+      .lista-redes {
+        background-color: rgb(8, 8, 81);
+      }
+      .lista-redes {
+        display: flex;
+        justify-content: space-around;
+      }
+      .body section {
+        border-color: black;
+        border-width: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header id="principal">
+      <h1 class="heading-principal">Bienvenidos a Empresa Ejemplo</h1>
+      <nav>
+        <a href="#about">Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#productos">Productos</a>
+        <a href="#asociados">Asociados</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <div class="carousel">
+      <div class="slides">
+        <img src="/imagenes/descarga.jpg" alt="Foto 1" />
+        <img src="/imagenes/images (1).jpg" alt="Foto 2" />
+        <img src="/imagenes/images (3).jpg" alt="Foto 3" />
+        <img src="/imagenes/images (2).jpg" alt="foto4" />
+        <img src="/imagenes/images.jpg" alt="foto5" />
+      </div>
+    </div>
+    <div class="box-principal">
+      <!-- Sección "Nosotros" -->
+      <section id="about" class="nosotros-seccion">
+        <h2 class="noso">Nosotros</h2>
+        <img src="/imagenes/descarga.jpg" alt="imagen-nosotros" />
+        <p>
+          Somos una empresa dedicada a proporcionar soluciones innovadoras para
+          nuestros clientes.
+        </p>
+        <a href="#principal" class="enlace-nosotros">Volver Menu</a>
+      </section>
+
+      <!-- Sección "Servicios" -->
+      <section id="services" class="services">
+        <h2>Servicios</h2>
+        <img src="/imagenes/images (1).jpg" alt="" />
+        <p>
+          Ofrecemos una amplia gama de servicios desde consultoría hasta
+          desarrollo de software personalizado.
+        </p>
+        <a href="#principal" class="enlace-servicio">Volver Menu</a>
+      </section>
+      <!--Seccion Productos-->
+      <section id="productos" class="seccion-productos">
+        <h2 class="productos-heading">Productos</h2>
+        <img src="/imagenes/images (2).jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse porro,
+          enim nihil nemo quidem sint quisquam expedita sunt sapiente magnam
+          tempora ullam quasi, saepe corporis omnis, quo fugit laboriosam earum.
+        </p>
+        <a href="#principal" class="enlace-productos">Volver Menu</a>
+      </section>
+      <!--Seccion Asociados-->
+      <section id="asociados" class="seccion-asociados">
+        <h2>Asociados</h2>
+        <img src="/imagenes/images (3).jpg" alt="" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim officia
+          eius dicta velit deleniti totam minus aspernatur quibusdam, molestias
+          labore laborum ad repellat unde ipsa deserunt! Numquam sint hic
+          molestiae.
+        </p>
+        <a href="#principal" class="enlace-asociados">Volver Menu</a>
+      </section>
+
+      <!-- Sección "Contacto" -->
+      <section id="contact" class="contact">
+        <h2 class="contacto-heading">Contacto</h2>
+        <img src="/imagenes/images.jpg" alt="imagen-contacto" />
+
+        <p>Contáctanos para saber más sobre nuestros productos y servicios.</p>
+        <a href="#principal" class="enlace-contacto">Volver Menu</a>
+      </section>
+    </div>
+    <!-- Pie de página -->
+    <footer class="footer-box">
+      <div class="redes-box">
+        <h3 class="redes-sociales">Redes Sociales</h3>
+        <nav class="nav-footer lista-redes">
+          <a href="www.facebook.com">Facebook</a>
+
+          <a href="www.instagram.com">Instagram</a>
+
+          <a href="www.linkeding.com">Linkedin</a>
+
+          <a href="www.twiter.com">Twiter</a>
+
+          <a href="www.youtube.com">Youtube</a>
+        </nav>
+      </div>
+      <p>© 2024 Empresa Ejemplo. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
